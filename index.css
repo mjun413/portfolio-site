@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-section {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+.title {
+  width: 90%;
+  padding-top: 15px;
+  padding-left: 5px;
+}
+.hero-title {
+  font-family: Soleil,Helvetica,Arial,sans-serif;
+  font-size: 20px;
+}
+.big-nav-layout {
+  display: none;
+}
+.text1 {
+  color:#e24e42;
+}
+.text2 {
+  color: #66b9bf;
+}
+.text3 {
+  color: #eeaa7b;
+}
+.burger-nav-icon {
+  margin: 1em;
+  width: 25px;
+}
+.burger-nav-icon:after, 
+.burger-nav-icon:before, 
+.burger-nav-icon div {
+  background-color: rgb(88, 84, 84);
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 4px;
+  margin: 3px 0;
+  transition: all .2s ease-in-out;
+}
+.bars {
+  width: 20px;
+  height: 3px;
+  background-color: rgb(97, 92, 92);
+  margin: 4px 0;
+} 
+.overlay-small-nav {
+  position: fixed; 
+  width: 100%; 
+  height: 100%;
+  top: 40px; 
+  left: 0;
+  right: 40px;
+  bottom: 0;
+  background-color: white;
+  z-index: 999; 
+  cursor: pointer; 
+  text-align: center;
+  padding-top: 60px;
+}
+.small-nav-link {
+  text-decoration: none;
+  display: block;
+  color: black;
+  margin-left: 25px;
+  text-transform: uppercase;
+  font-family: Soleil,Helvetica,Arial,sans-serif;
+  font-weight: 170;
+  font-size: 18px;
+  letter-spacing: .09334rem;
+  padding-top: 15px;
+  margin-bottom: 5px;
+}
+.hide {
+  display: none;
+}
+.small-nav-link:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 2px grey, 0 0 25px #f19f4d , 0 0 5px #f9cf00 ;
+}
+.hero-banner {
+  background:linear-gradient(-20deg, #f19f4d 45%, #f9cf00 0);
+  width: 100%;
+  height: 120px;
+}
+.hero-avatar {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.avatar-img {
+  border-radius: 50%;
+  margin-top: 130px;
+  margin-left: 10px;
+  width: 150px;
+  height: 150px;
+}
+.hero-big {
+  display: none;
+}
+.social {
+  margin-left: 185px;
+  margin-top: 15px;
+}
+.header-secondary {
+    font-family: Soleil,Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    font-size: 10px;
+    letter-spacing: .08334rem;
+    text-transform: uppercase;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 6px;
+  margin-left: auto;
+  background-color: transparent;
+}
+.icon-imgs {
+  height: 28px;
+  width: 28px;
+}
+.icon-imgs:hover {
+  cursor: pointer;
+}
+.icon-img-following {
+  margin-left: 10px;
+}
+.headers {
+  margin-top: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: Soleil,Helvetica,Arial,sans-serif;
+  font-weight: 800;
+  font-size: 1.5rm;
+  line-height: 2.5rm;
+  letter-spacing: .1rem;
+}
+.hero-bio {
+  margin-top: 30px;
+}
+.layout-small {
+  font-family: Soleil,Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+.individual-projects {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.project-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.project-description {
+  font-weight: 500;
+}
+.bullets {
+  width: 28px;
+  height: 28px;
+}
+.avengers-image {
+  width: 290px;
+}
+.project-links {
+  margin-bottom: 50px;
+}
+.project-link {
+  color: black;
+}
+.project-link:hover {
+  cursor: pointer;
+  color: #eb9642;
+}
+.project-link2 {
+  color: black;
+}
+.project-link-title {
+  color: black;
+}
+.project-link-title:hover {
+  cursor: pointer;
+  color: #eb9642;
+}
+.end-page-container {
+  display: flex;
+}
+.goodbye-icon {
+  width: 35px;
+  height: 35px;
+}
+.legal {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+}
+.legal-texts {
+  padding-top: 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width : 1366px) {
+  .title {
+    margin-left: 20px;
+  }
+  .hero-title {
+    font-size: 23px;
+  }
+  .text2 {
+    padding-left: 5px;
+  }
+  .text3 {
+    padding-left: 5px;
+  }
+  #burger-icon {
+    display: none;
+  }
+  .hero-banner {
+    height: 170px;
+  }
+  .avatar-img {
+    background-image: url(https://i.ibb.co/smnXzZD/600x600.jpg);
+    width: 270px;
+    height: 270px;
+    margin-top: 170px;
+    margin-left: 30px;
+  }
+  .social {
+    margin-left: 95px;
+    margin-top: -50px;
+  }
+  .hero-info-small {
+    display:none;
+  }
+  .header-secondary {
+    font-size: 14px;
+  }
+  .hero-big {
+    display: block;    
+    width: 60%;
+    height: auto;
+    margin-left: 310px;
+    margin-top: 20px;
+  }
+  .icon-imgs {
+    width: 33px;
+    height: 33px;
+    margin-left: 5px;
+  }
+  #icon-img1 {
+    margin-right: 5px;
+  }
+  #icon-img2 {
+    margin-right: 5px;
+  }
+  .hero-projects {
+    margin-top: 50px;
+  }
+  .hero-name-big {
+    font-family: Soleil,Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 2.5rm;
+    letter-spacing: .1rem;
+  }
+  .layout-big {
+    font-size: 20px;
+    font-family: Soleil,Helvetica,Arial,sans-serif;
+    font-weight: 330;
+    line-height: 2.5rm;
+    letter-spacing: .1rem;
+  }
+  .big-nav-layout {
+    display: none;
+  }
+  .title-layout-big {
+    font-size: 33px;
+    margin-left: 30px;
+  }
+  .individual-projects {
+    text-align: center;
+  }
+  .project-link-title {
+    font-size: 26px;
+  }
+  .project-description {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .avengers-image {
+    width: 490px;
+  }
+  .project-link {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 1367px ) {
+  .nav-section {
+    width: 60%;
+  }
+  .big-nav-layout {
+    display: flex;
+    margin-top: 20px;
+  }
+  .big-nav-link {
+    text-decoration: none;
+    color: black;
+    padding-left: 60px;
+    font-family: Soleil,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 330;
+    line-height: 2.5rm;
+    letter-spacing: .1rem;
+  }
+  .big-nav-link:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px 2px grey, 0 0 25px #f19f4d , 0 0 5px #f9cf00 ;
+  }
+  .title {
+    margin-left: 60px;
+    width: 400px;
+  }
+  .hero-title {
+    font-size: 23px;
+  }
+  .text2 {
+    padding-left: 5px;
+  }
+  .text3 {
+    padding-left: 5px;
+  }
+  #burger-icon {
+    display: none;
+  }
+  .hero-banner {
+    height: 170px;
+  }
+  .avatar-img {
+    background-image: url(https://i.ibb.co/smnXzZD/600x600.jpg);
+    width: 270px;
+    height: 270px;
+    margin-top: 170px;
+    margin-left: 350px;
+  }
+  .social {
+    margin-left: 420px;
+    margin-top: 10px;
+  }
+  .hero-info-small {
+    display:none;
+  }
+  .header-secondary {
+    font-size: 14px;
+  }
+  .hero-big {
+    display: block;    
+    width: 40%;
+    height: auto;
+    margin-left: 630px;
+    margin-top: 20px;
+  }
+  .burger-dropdown {
+    display: none;
+  }
+  .icon-imgs {
+    width: 33px;
+    height: 33px;
+    margin-left: 5px;
+  }
+  #icon-img1 {
+    margin-right: 5px;
+  }
+  #icon-img2 {
+    margin-right: 5px;
+  }
+  .projects-container {
+    width: 45%;
+    margin-left: 540px;
+  }
+  .hero-projects {
+    margin-top: 50px;
+  }
+  .hero-name-big {
+    font-family: Soleil,Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 2.5rm;
+    letter-spacing: .1rem;
+  }
+  .layout-big {
+    font-size: 20px;
+    font-family: Soleil,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    line-height: 2.5rm;
+    letter-spacing: .1rem;
+  }
+  .title-layout-big {
+    font-size: 33px;
+    margin-left: 30px;
+  }
+  .individual-projects {
+    text-align: center;
+  }
+  .project-link-title {
+    font-size: 26px;
+  }
+  .project-description {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .avengers-image {
+    width: 490px;
+  }
+  .project-link {
+    font-size: 23px;
+  }
+}
